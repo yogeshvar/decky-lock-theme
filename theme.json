@@ -26,7 +26,7 @@
                       "SP"
                     ]
                   },
-                "Image/GIF": {
+                "Image": {
                     "LockScreenContainerBackground/Image.css": [
                       "SP"
                     ]
@@ -38,6 +38,14 @@
                     "on": "Color",
                     "default": "#1a1a1a",
                     "css_variable": "GLSContainerColor",
+                    "tabs": ["SP"]
+                },
+                {
+                    "name": "Background Image Picker",
+                    "type": "image-picker",
+                    "on": "Image",
+                    "default": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW9rOTFwaDBraDd2dThjZTd4dzdzcXU3MG04Z3FvbXZtaXJ2c3B4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SnVZO1N0Wo6u4/giphy.gif",
+                    "css_variable": "GLSContainerImage",
                     "tabs": ["SP"]
                 }
             ]

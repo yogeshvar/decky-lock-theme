@@ -1,6 +1,6 @@
 /* === Enhanced SteamOS Lock Screen === */
 :root {
-  --glass-bg: url("decky-lock-theme/assets/gifs/rain.gif");
+  --glass-bg: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW9rOTFwaDBraDd2dThjZTd4dzdzcXU3MG04Z3FvbXZtaXJ2c3B4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SnVZO1N0Wo6u4/giphy.gif");
   --accent-color: #1e88e5;
   --glass-opacity: 0.15;
   --animation-duration: 0.8s;
@@ -8,11 +8,11 @@
   
   /* Glass Lock Screen CSS variables for theme customization */
   --GLSContainerColor: #1a1a1a;
-  --GLSContainerImage: url("decky-lock-theme/assets/gifs/rain.gif");
+  --GLSContainerImage: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW9rOTFwaDBraDd2dThjZTd4dzdzcXU3MG04Z3FvbXZtaXJ2c3B4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SnVZO1N0Wo6u4/giphy.gif");
   --GLSFontColor: #ffffff;
 }
 
-/* Main lock screen container */
+/* Main lock screen container with enhanced background */
 #Main > ._3rFFUJJVlS0W9hEA3hVEUa.Panel {
   background: var(--glass-bg) center/cover no-repeat fixed !important;
   backdrop-filter: blur(2px);
@@ -132,13 +132,15 @@
   cursor: pointer;
 }
 
-/* Glass effects for default Glass (Icons Only) mode - REMOVED */
+/* Glass effects for default Glass (Icons Only) mode */
 ._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]) {
-  background: none !important;
-  border: none !important;
-  backdrop-filter: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 12px !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2) !important;
 }
 
 /* Hide the number text completely */
@@ -176,23 +178,27 @@
   transform: scale(1.1) !important;
 }
 
-/* Glass button hover effects - only for default mode - REMOVED */
+/* Glass button hover effects - only for default mode */
 ._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):hover {
   transform: scale(1.05) !important;
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.15),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3) !important;
 }
 
 ._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):hover > img {
   filter: brightness(1.2) contrast(1.1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3)) !important;
 }
 
-/* Glass button active state - only for default mode - REMOVED */
+/* Glass button active state - only for default mode */
 ._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):active {
   transform: scale(0.98) !important;
-  background: none !important;
-  box-shadow: none !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    inset 0 2px 4px rgba(0, 0, 0, 0.1) !important;
 }
 
 ._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):active > img {
