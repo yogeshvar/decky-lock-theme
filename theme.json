@@ -3,69 +3,11 @@
     "version": "v1.0",
     "author": "Yogeshvar",
     "target": "Lock Screen",
-    "description": "Modern glassmorphism theme for Steam Deck lock screen with customizable background options",
+    "description": "Modern glassmorphism theme for Steam Deck lock screen",
     "manifest_version": 4,
     "inject": {
         "shared.css": [
             "SP"
         ]
-    },
-    "patches": {
-        "Background Type": {
-            "default": "Glass",
-            "type": "dropdown",
-            "values": {
-                "Glass": {},
-                "Solid Color": {
-                    "background-solid.css": [
-                        "SP"
-                    ]
-                },
-                "Custom Image": {
-                    "background-image.css": [
-                        "SP"
-                    ]
-                }
-            },
-            "components": [
-                {
-                    "name": "Background Color Picker",
-                    "type": "color-picker",
-                    "on": "Solid Color",
-                    "default": "#1a1a2e",
-                    "css_variable": "GLSBackgroundColor",
-                    "tabs": ["SP"]
-                }
-            ]
-        },
-        "Glass Effect Intensity": {
-            "type": "none",
-            "values": {
-                "_": {}
-            },
-            "components": [
-                {
-                    "name": "Blur Intensity",
-                    "type": "slider",
-                    "on": "_",
-                    "default": 15,
-                    "min": 0,
-                    "max": 30,
-                    "css_variable": "GLSBlurIntensity",
-                    "tabs": ["SP"]
-                },
-                {
-                    "name": "Glass Opacity",
-                    "type": "slider", 
-                    "on": "_",
-                    "default": 0.1,
-                    "min": 0,
-                    "max": 0.5,
-                    "step": 0.01,
-                    "css_variable": "GLSGlassOpacity",
-                    "tabs": ["SP"]
-                }
-            ]
-        }
     }
 }
