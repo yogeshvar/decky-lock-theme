@@ -1,110 +1,231 @@
-/* Glass Lock Screen Theme CSS */
-
+/* === Enhanced SteamOS Lock Screen === */
 :root {
-    --GLSBlurIntensity: 15px;
-    --GLSGlassOpacity: 0.1;
+  --glass-bg: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW9rOTFwaDBraDd2dThjZTd4dzdzcXU3MG04Z3FvbXZtaXJ2c3B4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SnVZO1N0Wo6u4/giphy.gif");
+  --accent-color: #1e88e5;
+  --glass-opacity: 0.15;
+  --animation-duration: 0.8s;
+  --reveal-delay: 1.5s;
 }
 
-/* Target the lock screen container */
-.lockscreen-container,
-.lockscreen_LockScreenContainer_1VXGB {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    backdrop-filter: blur(var(--GLSBlurIntensity));
+/* Main lock screen container with enhanced background */
+#Main > ._3rFFUJJVlS0W9hEA3hVEUa.Panel {
+  background: var(--glass-bg) center/cover no-repeat fixed !important;
+  backdrop-filter: blur(2px);
 }
 
-/* Lock screen content area */
-.lockscreen-content,
-.lockscreen_LockScreenContent_3_4oX {
-    background: rgba(255, 255, 255, var(--GLSGlassOpacity));
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(var(--GLSBlurIntensity));
-    padding: 2rem;
+/* Enhanced timed reveal for main content */
+._1FxmNlnGGfU52UuU63ojqM > div,
+.aLaNwAEcdBFnXVdc4Nzix {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  animation: slideInReveal var(--animation-duration) ease-out forwards;
+  animation-delay: var(--reveal-delay);
 }
 
-/* Lock screen input field */
-.lockscreen-input,
-.lockscreen_InputField_2x8yF,
-input[type="password"] {
-    background: rgba(255, 255, 255, 0.2);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    color: white;
-    font-size: 1.2rem;
-    padding: 12px 16px;
-    transition: all 0.3s ease;
+/* Avatar and user info section - no background box */
+.aLaNwAEcdBFnXVdc4Nzix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 15px;
+  max-width: fit-content;
+  margin: 0 auto;
 }
 
-.lockscreen-input:focus,
-.lockscreen_InputField_2x8yF:focus,
-input[type="password"]:focus {
-    border-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-    outline: none;
+/* Avatar image enhancement - small and round, no background effects */
+.aLaNwAEcdBFnXVdc4Nzix > div > img {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;
+  border: none !important;
+  box-shadow: none !important;
+  animation-delay: calc(var(--reveal-delay) + 0.2s);
 }
 
-/* Lock screen buttons */
-.lockscreen-button,
-.lockscreen_Button_1aX2D {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    padding: 12px 24px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+/* Hide the text elements */
+._1Ewy74JD3THErSWk9wSliJ,
+._3aUT84qO5C3sjfj8G8hIKA,
+.vNjDQRABe6lwA6tOpBefX {
+  display: none !important;
 }
 
-.lockscreen-button:hover,
-.lockscreen_Button_1aX2D:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+/* PIN input dots with glass effect */
+._3fJq6rBJ7S5sNtyQfIfgoF {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px 0;
 }
 
-/* Lock screen title/header */
-.lockscreen-title,
-.lockscreen_Title_2QxnV {
-    color: white;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    font-weight: 300;
-    margin-bottom: 1.5rem;
+/* PIN input dots - minimal styling */
+._3eHNjs62dIltuSUaqjGRh9 {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  transition: all 0.3s ease;
 }
 
-/* Lock screen clock/time display */
-.lockscreen-clock,
-.lockscreen_Clock_1X8yF {
-    color: rgba(255, 255, 255, 0.9);
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    font-weight: 300;
-    margin-bottom: 1rem;
+/* Filled PIN dot state - minimal */
+._3eHNjs62dIltuSUaqjGRh9.filled {
+  background: white;
+  box-shadow: none;
 }
 
-/* Error messages on lock screen */
-.lockscreen-error,
-.lockscreen_Error_3mX2F {
-    background: rgba(220, 53, 69, 0.2);
-    border: 1px solid rgba(220, 53, 69, 0.5);
-    border-radius: 8px;
-    color: #ff6b6b;
-    padding: 8px 12px;
-    margin-top: 1rem;
+/* Minimal keypad styling - no background box */
+._2wl_hk5SjW9COBW6DRQrTf {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  max-width: 300px;
+  margin: 20px auto;
 }
 
-/* Steam Deck specific adjustments */
-@media (max-width: 800px) {
-    .lockscreen-content,
-    .lockscreen_LockScreenContent_3_4oX {
-        margin: 1rem;
-        padding: 1.5rem;
-    }
-    
-    .lockscreen-input,
-    .lockscreen_InputField_2x8yF,
-    input[type="password"] {
-        font-size: 1rem;
-        padding: 10px 14px;
-    }
+/* Keypad layout positioning */
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(1) { grid-column: 1; grid-row: 1; } /* 1 */
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(2) { grid-column: 2; grid-row: 1; } /* 2 */
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(3) { grid-column: 3; grid-row: 1; } /* 3 */
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(4) { grid-column: 1; grid-row: 2; } /* 4 */
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(5) { grid-column: 2; grid-row: 2; } /* 5 */
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(6) { grid-column: 3; grid-row: 2; } /* 6 */
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(7) { grid-column: 1; grid-row: 3; } /* 7 */
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(8) { grid-column: 2; grid-row: 3; } /* 8 */
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(9) { grid-column: 3; grid-row: 3; } /* 9 */
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(10) { grid-column: 2; grid-row: 4; } /* 0 */
+
+/* Minimal keypad buttons - focus on controller glyphs */
+._2c4Hz8Y8kYqeq1W1Jeq52q {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: keypadButtonReveal 0.4s ease-out forwards;
+  background: none !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  transition: all 0.2s ease !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0 !important;
+  color: transparent !important;
+  font-size: 0 !important;
+  width: 80px !important;
+  height: 80px !important;
+  cursor: pointer;
+}
+
+/* Hide the number text completely */
+._2c4Hz8Y8kYqeq1W1Jeq52q::before {
+  display: none !important;
+}
+
+/* Staggered animation delays for keypad buttons */
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(1) { animation-delay: calc(var(--reveal-delay) + 0.3s); }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(2) { animation-delay: calc(var(--reveal-delay) + 0.35s); }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(3) { animation-delay: calc(var(--reveal-delay) + 0.4s); }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(4) { animation-delay: calc(var(--reveal-delay) + 0.45s); }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(5) { animation-delay: calc(var(--reveal-delay) + 0.5s); }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(6) { animation-delay: calc(var(--reveal-delay) + 0.55s); }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(7) { animation-delay: calc(var(--reveal-delay) + 0.6s); }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(8) { animation-delay: calc(var(--reveal-delay) + 0.65s); }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(9) { animation-delay: calc(var(--reveal-delay) + 0.7s); }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(10) { animation-delay: calc(var(--reveal-delay) + 0.75s); }
+
+/* Button hover effects - simple scale only */
+._2c4Hz8Y8kYqeq1W1Jeq52q:hover {
+  transform: scale(1.1) !important;
+}
+
+._2c4Hz8Y8kYqeq1W1Jeq52q:hover > img {
+  transform: scale(1.2) !important;
+}
+
+/* Button active state - simple scale */
+._2c4Hz8Y8kYqeq1W1Jeq52q:active {
+  transform: scale(0.95) !important;
+}
+
+._2c4Hz8Y8kYqeq1W1Jeq52q:active > img {
+  transform: scale(1.1) !important;
+}
+
+/* Controller glyph icons - larger and more prominent */
+._2c4Hz8Y8kYqeq1W1Jeq52q > img {
+  width: 48px !important;
+  height: 48px !important;
+  filter: brightness(1.3) contrast(1.2) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5)) !important;
+  transition: all 0.3s ease !important;
+}
+
+
+
+/* === KEYFRAMES === */
+@keyframes slideInReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
+@keyframes keypadButtonReveal {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* Pulse animation for focused elements */
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(30, 136, 229, 0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(30, 136, 229, 0); }
+}
+
+/* Add pulse to focused button - no color effects */
+._2c4Hz8Y8kYqeq1W1Jeq52q:focus {
+  outline: none !important;
+}
+
+._2c4Hz8Y8kYqeq1W1Jeq52q:focus > img {
+  transform: scale(1.1) !important;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  ._2wl_hk5SjW9COBW6DRQrTf {
+    gap: 15px;
+    max-width: 240px;
+  }
+  
+  ._2c4Hz8Y8kYqeq1W1Jeq52q {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  ._2c4Hz8Y8kYqeq1W1Jeq52q > img {
+    width: 36px !important;
+    height: 36px !important;
+  }
 }
