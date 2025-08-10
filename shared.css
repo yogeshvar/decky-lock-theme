@@ -8,7 +8,7 @@
   
   /* Glass Lock Screen CSS variables for theme customization */
   --GLSContainerColor: #1a1a1a;
-  --GLSContainerImage: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW9rOTFwaDBraDd2dThjZTd4dzdzcXU3MG04Z3FvbXZtaXJ2c3B4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SnVZO1N0Wo6u4/giphy.gif");
+  --GLSContainerImage: url(var(--GLSContainerImage));
   --GLSFontColor: #ffffff;
 }
 
