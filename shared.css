@@ -13,7 +13,7 @@
 
 /* Main lock screen container with enhanced background */
 #Main > ._3rFFUJJVlS0W9hEA3hVEUa.Panel {
-  background: var(--GLSContainerImage) center/cover no-repeat fixed !important;
+  background: url("decky-lock-theme/assets/gifs/rain.gif") center/cover no-repeat fixed !important;
   backdrop-filter: blur(2px);
 }
 
