@@ -14,7 +14,7 @@
 
 /* Main lock screen container with enhanced background */
 #Main > ._3rFFUJJVlS0W9hEA3hVEUa.Panel {
-  background: var(--glass-bg) center/cover no-repeat fixed !important;
+  background: var(--GLSContainerImage) center/cover no-repeat fixed !important;
   backdrop-filter: blur(2px);
 }
 
