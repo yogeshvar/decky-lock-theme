@@ -8,12 +8,18 @@
     color: transparent !important;
     font-size: 0 !important;
     gap: 0px !important;
-    padding: 0 22px !important;
-    line-height: 68px !important;
+    padding: 0 !important;
+}
+
+/* Hide any numbers that might be added by button shapes */
+._2c4Hz8Y8kYqeq1W1Jeq52q::before {
+    display: none !important;
+    content: none !important;
 }
 
 /* Show only controller icons, hide numbers */
 ._2c4Hz8Y8kYqeq1W1Jeq52q > img {
+    display: block !important;
     width: 48px !important;
     height: 48px !important;
 }
