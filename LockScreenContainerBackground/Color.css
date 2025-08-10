@@ -1,3 +1,55 @@
 #Main > ._3rFFUJJVlS0W9hEA3hVEUa.Panel {
     background: var(--GLSContainerColor) !important;
 }
+
+/* Auto-contrast system based on background color */
+/* Create contrasting elements that adapt to the background */
+._3eHNjs62dIltuSUaqjGRh9 {
+    background: color-mix(in srgb, var(--GLSContainerColor) 30%, transparent 70%) !important;
+    filter: invert(0.8) contrast(1.5) !important;
+}
+
+._3eHNjs62dIltuSUaqjGRh9.filled {
+    background: color-mix(in srgb, var(--GLSContainerColor) 70%, transparent 30%) !important;
+    filter: invert(1) contrast(1.5) !important;
+}
+
+/* Controller icons - invert based on background */
+._2c4Hz8Y8kYqeq1W1Jeq52q > img {
+    filter: invert(0.8) contrast(1.8) drop-shadow(0 2px 6px color-mix(in srgb, var(--GLSContainerColor), white 50%)) !important;
+}
+
+/* Glass buttons - create contrast with background */
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]) {
+    background: color-mix(in srgb, var(--GLSContainerColor), transparent 80%) !important;
+    border: 1px solid color-mix(in srgb, var(--GLSContainerColor), transparent 70%) !important;
+    filter: invert(0.1) !important;
+    box-shadow: 
+        0 8px 32px color-mix(in srgb, var(--GLSContainerColor), transparent 90%),
+        inset 0 1px 1px color-mix(in srgb, var(--GLSContainerColor), white 80%) !important;
+}
+
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):hover {
+    background: color-mix(in srgb, var(--GLSContainerColor), transparent 70%) !important;
+    border-color: color-mix(in srgb, var(--GLSContainerColor), transparent 60%) !important;
+    filter: invert(0.15) !important;
+    box-shadow: 
+        0 12px 40px color-mix(in srgb, var(--GLSContainerColor), transparent 85%),
+        inset 0 1px 1px color-mix(in srgb, var(--GLSContainerColor), white 70%) !important;
+}
+
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):hover > img {
+    filter: invert(0.9) contrast(2) drop-shadow(0 2px 8px color-mix(in srgb, var(--GLSContainerColor), white 30%)) !important;
+}
+
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):active {
+    background: color-mix(in srgb, var(--GLSContainerColor), transparent 60%) !important;
+    filter: invert(0.2) !important;
+    box-shadow: 
+        0 4px 16px color-mix(in srgb, var(--GLSContainerColor), transparent 80%),
+        inset 0 2px 4px color-mix(in srgb, var(--GLSContainerColor), black 90%) !important;
+}
+
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):active > img {
+    filter: invert(0.95) contrast(2.2) drop-shadow(0 1px 4px color-mix(in srgb, var(--GLSContainerColor), white 10%)) !important;
+}

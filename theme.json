@@ -85,6 +85,23 @@
                     "tabs": ["SP"]
                 }
             ]
+        },
+        "Button Shape": {
+            "default": "Box",
+            "type": "dropdown",
+            "values":{
+                "Box": {},
+                "Circle": {
+                    "ButtonShape-Circle.css": [
+                      "SP"
+                    ]
+                  },
+                "None": {
+                    "ButtonShape-None.css": [
+                      "SP"
+                    ]
+                  }
+            }
         }
     }
 }
