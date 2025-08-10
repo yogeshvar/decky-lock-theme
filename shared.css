@@ -1,5 +1,6 @@
 /* === Enhanced SteamOS Lock Screen === */
 :root {
+  --glass-bg: url("decky-lock-theme/assets/gifs/rain.gif");
   --accent-color: #1e88e5;
   --glass-opacity: 0.15;
   --animation-duration: 0.8s;
@@ -13,7 +14,7 @@
 
 /* Main lock screen container with enhanced background */
 #Main > ._3rFFUJJVlS0W9hEA3hVEUa.Panel {
-  background: url("decky-lock-theme/assets/gifs/rain.gif") center/cover no-repeat fixed !important;
+  background: var(--glass-bg) center/cover no-repeat fixed !important;
   backdrop-filter: blur(2px);
 }
 
