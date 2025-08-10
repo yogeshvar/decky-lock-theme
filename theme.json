@@ -39,14 +39,6 @@
                     "default": "#1a1a1a",
                     "css_variable": "GLSContainerColor",
                     "tabs": ["SP"]
-                },
-                {
-                    "name": "Background Image/GIF",
-                    "type": "image-picker",
-                    "on": "Image/GIF",
-                    "default": "decky-lock-theme/assets/gifs/rain.gif",
-                    "css_variable": "GLSContainerImage",
-                    "tabs": ["SP"]
                 }
             ]
         },
