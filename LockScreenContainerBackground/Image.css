@@ -1,5 +1,6 @@
 #Main > ._3rFFUJJVlS0W9hEA3hVEUa.Panel {
     background: var(--GLSContainerImage) center/cover no-repeat fixed !important;
+    background-color: transparent !important;
 }
 
 /* Reduce status bar background opacity when using custom image */

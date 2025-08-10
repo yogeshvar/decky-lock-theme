@@ -44,7 +44,7 @@
                     "name": "Background Image Picker",
                     "type": "image-picker",
                     "on": "Image",
-                    "default": "LockScreenContainerBackground/default.gif",
+                    "default": "decky-lock-screen/LockScreenContainerBackground/default.gif",
                     "css_variable": "GLSContainerImage",
                     "tabs": ["SP"]
                 }
@@ -85,35 +85,6 @@
                     "tabs": ["SP"]
                 }
             ]
-        },
-        "Left-Handed Mode": {
-          "type": "checkbox",
-          "default": "No",
-          "values": {
-            "Yes": {
-              "Left-Handed.css": [
-                "SP"
-              ]
-            },
-            "No":{}
-          }
-        },
-        "Input Area Background": {
-          "type": "none",
-          "values": {
-              "_": {
-              }
-          },
-          "components": [
-              {
-                  "name": "Input Area Background Color",
-                  "type": "color-picker",
-                  "on": "_",
-                  "default": "rgba(0, 0, 0, 0.3)",
-                  "css_variable": "GLSBackgroundColor",
-                  "tabs": ["SP"]
-              }
-          ]
         }
     }
 }
