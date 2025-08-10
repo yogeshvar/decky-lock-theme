@@ -28,20 +28,17 @@
   animation-delay: var(--reveal-delay);
 }
 
-/* Avatar and user info section - elevated container with blur */
+/* Avatar and user info section - no background effects */
 .aLaNwAEcdBFnXVdc4Nzix {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.3),
-    0 2px 8px rgba(0, 0, 0, 0.15) !important;
-  backdrop-filter: blur(20px) saturate(1.5) !important;
-  border-radius: 16px !important;
-  padding: 20px;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  padding: 15px;
   max-width: fit-content;
   margin: 0 auto;
 }
