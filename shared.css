@@ -1,6 +1,5 @@
 /* === Enhanced SteamOS Lock Screen === */
 :root {
-  --glass-bg: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW9rOTFwaDBraDd2dThjZTd4dzdzcXU3MG04Z3FvbXZtaXJ2c3B4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SnVZO1N0Wo6u4/giphy.gif");
   --accent-color: #1e88e5;
   --glass-opacity: 0.15;
   --animation-duration: 0.8s;
@@ -8,7 +7,6 @@
   
   /* Glass Lock Screen CSS variables for theme customization */
   --GLSContainerColor: #1a1a1a;
-  --GLSContainerImage: url(var(--GLSContainerImage));
   --GLSFontColor: #ffffff;
 }
 
