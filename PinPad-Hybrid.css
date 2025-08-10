@@ -1,5 +1,10 @@
-/* Standard pin pad with both icons and numbers */
+/* Standard pin pad with both icons and numbers - remove glass effects */
 ._2c4Hz8Y8kYqeq1W1Jeq52q {
+    background: none !important;
+    border: none !important;
+    backdrop-filter: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
     color: white !important;
     font-size: 18px !important;
     font-weight: 600 !important;

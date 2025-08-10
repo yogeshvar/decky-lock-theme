@@ -8,7 +8,7 @@
   
   /* Glass Lock Screen CSS variables for theme customization */
   --GLSContainerColor: #1a1a1a;
-  --GLSContainerImage: url("decky-lock-screen/LockScreenContainerBackground/default.gif");
+  --GLSContainerImage: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW9rOTFwaDBraDd2dThjZTd4dzdzcXU3MG04Z3FvbXZtaXJ2c3B4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SnVZO1N0Wo6u4/giphy.gif");
   --GLSFontColor: #ffffff;
 }
 
@@ -132,6 +132,17 @@
   cursor: pointer;
 }
 
+/* Glass effects for default Glass (Icons Only) mode */
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]) {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 12px !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2) !important;
+}
+
 /* Hide the number text completely */
 ._2c4Hz8Y8kYqeq1W1Jeq52q::before {
   display: none !important;
@@ -149,7 +160,7 @@
 ._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(9) { animation-delay: calc(var(--reveal-delay) + 0.7s); }
 ._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(10) { animation-delay: calc(var(--reveal-delay) + 0.75s); }
 
-/* Button hover effects - simple scale only */
+/* Default hover effects */
 ._2c4Hz8Y8kYqeq1W1Jeq52q:hover {
   transform: scale(1.1) !important;
 }
@@ -158,7 +169,7 @@
   transform: scale(1.2) !important;
 }
 
-/* Button active state - simple scale */
+/* Default active state */
 ._2c4Hz8Y8kYqeq1W1Jeq52q:active {
   transform: scale(0.95) !important;
 }
@@ -167,11 +178,39 @@
   transform: scale(1.1) !important;
 }
 
-/* Controller glyph icons - larger and more prominent */
+/* Glass button hover effects - only for default mode */
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):hover {
+  transform: scale(1.05) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.15),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3) !important;
+}
+
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):hover > img {
+  filter: brightness(1.2) contrast(1.1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3)) !important;
+}
+
+/* Glass button active state - only for default mode */
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):active {
+  transform: scale(0.98) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    inset 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):active > img {
+  filter: brightness(1.1) contrast(1.05) drop-shadow(0 1px 4px rgba(0, 0, 0, 0.4)) !important;
+}
+
+/* Controller glyph icons with glass effect */
 ._2c4Hz8Y8kYqeq1W1Jeq52q > img {
-  width: 48px !important;
-  height: 48px !important;
-  filter: brightness(1.3) contrast(1.2) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5)) !important;
+  width: 40px !important;
+  height: 40px !important;
+  filter: brightness(1.4) contrast(1.3) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4)) !important;
+  opacity: 0.9 !important;
 }
 
 

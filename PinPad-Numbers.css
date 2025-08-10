@@ -1,5 +1,10 @@
-/* Numbers only pin pad */
+/* Numbers only pin pad - remove glass effects */
 ._2c4Hz8Y8kYqeq1W1Jeq52q {
+    background: none !important;
+    border: none !important;
+    backdrop-filter: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
     color: var(--GLSFontColor) !important;
     font-size: 24px !important;
     font-weight: 600 !important;

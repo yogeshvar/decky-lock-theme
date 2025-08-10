@@ -1,5 +1,10 @@
-/* Icons only pin pad */
+/* Icons only pin pad - remove glass effects */
 ._2c4Hz8Y8kYqeq1W1Jeq52q {
+    background: none !important;
+    border: none !important;
+    backdrop-filter: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
     color: transparent !important;
     font-size: 0 !important;
     gap: 0px !important;
