@@ -2,7 +2,7 @@
     "name": "Glass Lock Screen",
     "version": "v1.0",
     "author": "Yogeshvar",
-    "target": "Lock Screen",
+    "target": ["Lock Screen", "Settings"],
     "description": "Modern glassmorphism theme for Steam Deck lock screen",
     "manifest_version": 4,
     "inject": {
