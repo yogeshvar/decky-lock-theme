@@ -35,13 +35,6 @@
                     "default": "#1a1a2e",
                     "css_variable": "GLSBackgroundColor",
                     "tabs": ["SP"]
-                },
-                {
-                    "name": "Background Image Picker",
-                    "type": "image-picker",
-                    "on": "Custom Image",
-                    "css_variable": "GLSBackgroundImage",
-                    "tabs": ["SP"]
                 }
             ]
         },
