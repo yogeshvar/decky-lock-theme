@@ -1,0 +1,10 @@
+/* Custom Image Background Override */
+
+:root {
+    --GLSBackgroundImage: url("Glass Lock Screen/background-default.jpg");
+}
+
+.lockscreen-container,
+.lockscreen_LockScreenContainer_1VXGB {
+    background: var(--GLSBackgroundImage) center/cover no-repeat !important;
+}
