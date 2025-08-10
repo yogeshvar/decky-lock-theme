@@ -12,9 +12,8 @@
   --GLSFontColor: #ffffff;
 }
 
-/* Main lock screen container with enhanced background */
+/* Main lock screen container */
 #Main > ._3rFFUJJVlS0W9hEA3hVEUa.Panel {
-  background: var(--glass-bg) center/cover no-repeat fixed !important;
   backdrop-filter: blur(2px);
 }
 
