@@ -1,6 +1,6 @@
 /* === Enhanced SteamOS Lock Screen === */
 :root {
-  --glass-bg: url("decky-lock-theme/assets/gifs/rain.gif");
+  --glass-bg: url("https://media.giphy.com/media/Ssts7rvD7E01O/giphy.gif");
   --accent-color: #1e88e5;
   --glass-opacity: 0.15;
   --animation-duration: 0.8s;
