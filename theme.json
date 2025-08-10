@@ -26,7 +26,7 @@
                       "SP"
                     ]
                   },
-                "Image": {
+                "Image/GIF": {
                     "LockScreenContainerBackground/Image.css": [
                       "SP"
                     ]
@@ -41,10 +41,10 @@
                     "tabs": ["SP"]
                 },
                 {
-                    "name": "Background Image Picker",
+                    "name": "Background Image/GIF",
                     "type": "image-picker",
-                    "on": "Image",
-                    "default": "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW9rOTFwaDBraDd2dThjZTd4dzdzcXU3MG04Z3FvbXZtaXJ2c3B4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SnVZO1N0Wo6u4/giphy.gif",
+                    "on": "Image/GIF",
+                    "default": "decky-lock-theme/assets/gifs/rain.gif",
                     "css_variable": "GLSContainerImage",
                     "tabs": ["SP"]
                 }

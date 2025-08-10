@@ -132,15 +132,13 @@
   cursor: pointer;
 }
 
-/* Glass effects for default Glass (Icons Only) mode */
+/* Glass effects for default Glass (Icons Only) mode - REMOVED */
 ._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]) {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  backdrop-filter: blur(10px) !important;
-  border-radius: 12px !important;
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 1px rgba(255, 255, 255, 0.2) !important;
+  background: none !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 /* Hide the number text completely */
@@ -178,27 +176,23 @@
   transform: scale(1.1) !important;
 }
 
-/* Glass button hover effects - only for default mode */
+/* Glass button hover effects - only for default mode - REMOVED */
 ._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):hover {
   transform: scale(1.05) !important;
-  background: rgba(255, 255, 255, 0.15) !important;
-  border-color: rgba(255, 255, 255, 0.3) !important;
-  box-shadow: 
-    0 12px 40px rgba(0, 0, 0, 0.15),
-    inset 0 1px 1px rgba(255, 255, 255, 0.3) !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 ._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):hover > img {
   filter: brightness(1.2) contrast(1.1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3)) !important;
 }
 
-/* Glass button active state - only for default mode */
+/* Glass button active state - only for default mode - REMOVED */
 ._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):active {
   transform: scale(0.98) !important;
-  background: rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 
-    0 4px 16px rgba(0, 0, 0, 0.2),
-    inset 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  background: none !important;
+  box-shadow: none !important;
 }
 
 ._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):active > img {
