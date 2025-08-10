@@ -40,7 +40,6 @@
                     "name": "Background Image Picker",
                     "type": "image-picker",
                     "on": "Custom Image",
-                    "default": "Glass Lock Screen/background-default.jpg",
                     "css_variable": "GLSBackgroundImage",
                     "tabs": ["SP"]
                 }
