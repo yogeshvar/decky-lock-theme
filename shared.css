@@ -7,6 +7,7 @@
   
   /* Glass Lock Screen CSS variables for theme customization */
   --GLSContainerColor: #1a1a1a;
+  --GLSContainerImage: url("decky-lock-theme/assets/gifs/rain.gif");
   --GLSFontColor: #ffffff;
 }
 
