@@ -33,7 +33,7 @@
                   }
             },"components": [
                 {
-                    "name": "Background Color Picker",
+                    "name": "Background Color Picker (Default: #1a1a1a)",
                     "type": "color-picker",
                     "on": "Color",
                     "default": "#1a1a1a",
@@ -77,7 +77,7 @@
                   }
             },"components": [
                 {
-                    "name": "Font Color Picker",
+                    "name": "Font Color Picker (Default: #fff)",
                     "type": "color-picker",
                     "on": "Numbers Only",
                     "default": "#fff",

@@ -1,19 +1,42 @@
-/* No button shape - remove all backgrounds and borders */
-._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]) {
+/* No button background - show numbers instead of icons */
+._2c4Hz8Y8kYqeq1W1Jeq52q {
     background: none !important;
     border: none !important;
     backdrop-filter: none !important;
     border-radius: 0 !important;
     box-shadow: none !important;
+    color: var(--GLSFontColor) !important;
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
-._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):hover {
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
+/* Hide controller icons, show numbers */
+._2c4Hz8Y8kYqeq1W1Jeq52q > img {
+    display: none !important;
 }
 
-._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):active {
-    background: none !important;
-    box-shadow: none !important;
+/* Show the button numbers */
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(1)::before { content: "1"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(2)::before { content: "2"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(3)::before { content: "3"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(4)::before { content: "4"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(5)::before { content: "5"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(6)::before { content: "6"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(7)::before { content: "7"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(8)::before { content: "8"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(9)::before { content: "9"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(10)::before { content: "0"; }
+
+/* Hover and active states */
+._2c4Hz8Y8kYqeq1W1Jeq52q:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transform: scale(1.1) !important;
+}
+
+._2c4Hz8Y8kYqeq1W1Jeq52q:active {
+    color: rgba(255, 255, 255, 0.6) !important;
+    transform: scale(0.95) !important;
 }

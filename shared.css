@@ -130,6 +130,7 @@
   width: 80px !important;
   height: 80px !important;
   cursor: pointer;
+  position: relative !important;
 }
 
 /* Glass effects for default Glass (Icons Only) mode */
