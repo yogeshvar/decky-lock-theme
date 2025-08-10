@@ -1,0 +1,13 @@
+/* Numbers only pin pad */
+._2c4Hz8Y8kYqeq1W1Jeq52q {
+    color: var(--GLSFontColor) !important;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    gap: 0px !important;
+    padding: 0 22px !important;
+}
+
+/* Hide controller icons, show only numbers */
+._2c4Hz8Y8kYqeq1W1Jeq52q > img {
+    display: none !important;
+}

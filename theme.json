@@ -9,5 +9,111 @@
         "shared.css": [
             "SP"
         ]
+    },
+    "patches": {
+        "Background Type": {
+            "default": "Default",
+            "type": "dropdown",
+            "values":{
+                "Default": {},
+                "Transparent": {
+                    "LockScreenContainerBackground/Transparent.css": [
+                      "SP"
+                    ]
+                  },
+                "Color": {
+                    "LockScreenContainerBackground/Color.css": [
+                      "SP"
+                    ]
+                  },
+                "Image": {
+                    "LockScreenContainerBackground/Image.css": [
+                      "SP"
+                    ]
+                  }
+            },"components": [
+                {
+                    "name": "Background Color Picker",
+                    "type": "color-picker",
+                    "on": "Color",
+                    "default": "#1a1a1a",
+                    "css_variable": "GLSContainerColor",
+                    "tabs": ["SP"]
+                },
+                {
+                    "name": "Background Image Picker",
+                    "type": "image-picker",
+                    "on": "Image",
+                    "default": "LockScreenContainerBackground/default.gif",
+                    "css_variable": "GLSContainerImage",
+                    "tabs": ["SP"]
+                }
+            ]
+        },
+        "Pin Pad Style": {
+            "default": "Glass (Icons Only)",
+            "type": "dropdown",
+            "values":{
+                "Glass (Icons Only)": {},
+                "Standard (Icons + Numbers)": {
+                    "PinPad-Hybrid.css": [
+                      "SP"
+                    ]
+                  },
+                  "Numbers Only": {
+                    "PinPad-Numbers.css": [
+                      "SP"
+                    ]
+                  },
+                  "Icons Only": {
+                    "PinPad-Icons.css": [
+                      "SP"
+                    ]
+                  },
+                  "No Pin Pad (WARNING: Controller Input ONLY)": {
+                    "PinPad-None.css": [
+                      "SP"
+                    ]
+                  }
+            },"components": [
+                {
+                    "name": "Font Color Picker",
+                    "type": "color-picker",
+                    "on": "Numbers Only",
+                    "default": "#fff",
+                    "css_variable": "GLSFontColor",
+                    "tabs": ["SP"]
+                }
+            ]
+        },
+        "Left-Handed Mode": {
+          "type": "checkbox",
+          "default": "No",
+          "values": {
+            "Yes": {
+              "Left-Handed.css": [
+                "SP"
+              ]
+            },
+            "No":{}
+          }
+        },
+        "Input Area Background": {
+          "type": "none",
+          "values": {
+              "_": {
+              }
+          },
+          "components": [
+              {
+                  "name": "Input Area Background Color",
+                  "type": "color-picker",
+                  "on": "_",
+                  "default": "rgba(0, 0, 0, 0.3)",
+                  "css_variable": "GLSBackgroundColor",
+                  "tabs": ["SP"]
+              }
+          ]
+        }
     }
 }

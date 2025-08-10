@@ -5,6 +5,12 @@
   --glass-opacity: 0.15;
   --animation-duration: 0.8s;
   --reveal-delay: 1.5s;
+  
+  /* Glass Lock Screen CSS variables for theme customization */
+  --GLSContainerColor: #1a1a1a;
+  --GLSContainerImage: url("LockScreenContainerBackground/default.gif");
+  --GLSFontColor: #ffffff;
+  --GLSBackgroundColor: rgba(0, 0, 0, 0.3);
 }
 
 /* Main lock screen container with enhanced background */

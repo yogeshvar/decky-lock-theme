@@ -1,0 +1,14 @@
+/* Standard pin pad with both icons and numbers */
+._2c4Hz8Y8kYqeq1W1Jeq52q {
+    color: white !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    gap: 6px !important;
+    padding: 0 10px !important;
+}
+
+/* Show both numbers and controller icons */
+._2c4Hz8Y8kYqeq1W1Jeq52q > img {
+    width: 32px !important;
+    height: 32px !important;
+}

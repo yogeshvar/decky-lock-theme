@@ -1,0 +1,8 @@
+#Main > ._3rFFUJJVlS0W9hEA3hVEUa.Panel {
+    background: var(--GLSContainerImage) center/cover no-repeat fixed !important;
+}
+
+/* Reduce status bar background opacity when using custom image */
+.header_Header_1E_SL::before {
+    opacity: 0.5;
+}

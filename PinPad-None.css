@@ -1,0 +1,9 @@
+/* Hide pin pad completely - controller input only */
+._2wl_hk5SjW9COBW6DRQrTf {
+    display: none !important;
+}
+
+/* Adjust PIN dots positioning when no pin pad is shown */
+._3fJq6rBJ7S5sNtyQfIfgoF {
+    margin: 40px 0 !important;
+}
