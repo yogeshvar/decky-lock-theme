@@ -1,5 +1,5 @@
-/* No button background - show numbers instead of icons */
-._2c4Hz8Y8kYqeq1W1Jeq52q {
+/* No button background - only apply to default Glass mode, not Icons Only */
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]) {
     background: none !important;
     border: none !important;
     backdrop-filter: none !important;
@@ -13,30 +13,30 @@
     justify-content: center !important;
 }
 
-/* Hide controller icons, show numbers */
-._2c4Hz8Y8kYqeq1W1Jeq52q > img {
+/* Hide controller icons only in Glass mode, show numbers */
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]) > img {
     display: none !important;
 }
 
-/* Show the button numbers */
-._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(1)::before { content: "1"; }
-._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(2)::before { content: "2"; }
-._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(3)::before { content: "3"; }
-._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(4)::before { content: "4"; }
-._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(5)::before { content: "5"; }
-._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(6)::before { content: "6"; }
-._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(7)::before { content: "7"; }
-._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(8)::before { content: "8"; }
-._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(9)::before { content: "9"; }
-._2c4Hz8Y8kYqeq1W1Jeq52q:nth-child(10)::before { content: "0"; }
+/* Show the button numbers only in Glass mode */
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):nth-child(1)::before { content: "1"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):nth-child(2)::before { content: "2"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):nth-child(3)::before { content: "3"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):nth-child(4)::before { content: "4"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):nth-child(5)::before { content: "5"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):nth-child(6)::before { content: "6"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):nth-child(7)::before { content: "7"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):nth-child(8)::before { content: "8"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):nth-child(9)::before { content: "9"; }
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):nth-child(10)::before { content: "0"; }
 
-/* Hover and active states */
-._2c4Hz8Y8kYqeq1W1Jeq52q:hover {
+/* Hover and active states - only for Glass mode */
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):hover {
     color: rgba(255, 255, 255, 0.8) !important;
     transform: scale(1.1) !important;
 }
 
-._2c4Hz8Y8kYqeq1W1Jeq52q:active {
+._2c4Hz8Y8kYqeq1W1Jeq52q:not([class*="pinpad-"]):active {
     color: rgba(255, 255, 255, 0.6) !important;
     transform: scale(0.95) !important;
 }
